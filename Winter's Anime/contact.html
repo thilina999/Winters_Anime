@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>contact us</title>
+  <link rel="icon" href="images/icon3.jpg">
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">WINTER'S<span class="logo_colour">  ANIME</span></a></h1>
+          <h2> An Awesome Place for The Otaku</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>s
+          <li><a href="page2.html">Quiz</a></li>
+          <li><a href="page3.html">Shop</a></li>
+          <li class="selected"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Latest News</h3>
+            <h4>Fans Can Rejoice 'Code Geass' Returns For Season 3</h4>
+            <h5>February 1st, 2017</h5>
+            <p>Ressurection of Lelouch</p>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="http://animesuggestions.com/?name=Code+Geass%3A+Lelouch+of+the+Rebellion&method=best">Sugesstions</a></li>
+              <li><a href="http://blog.honeyfeed.fm/">Honey's Anime</a></li>
+              <li><a href="http://kissanime.ru/">Kissanime</a></li>
+              <li><a href="https://9anime.to/">9anime</a></li>
+            </ul>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Search</h3>
+            <form id="search_form">
+              <p>
+                <input class="search" type="text" name="search_field" value="Enter keywords....." />
+                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+              </p>
+            </form>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Contact Us</h1>
+
+
+        <p>Post your comments here !</p>
+          <div class="form_settings">
+	    <form name="f1">
+            <p><span>Name</span><input class="contact" type="text" id="your_name" value=""  name='name'/></p>
+            <p><span>Message</span><textarea class="contact textarea" rows="8" cols="50" id="your_msg" name='msg'></textarea></p>
+            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="button" onclick="submitfunc()" value="submit" /></p>
+	    </form>
+          </div>
+
+	<br>
+	 <script type="text/javascript">
+	     //for(int i=0;i<10;i++) {
+		function submitfunc(){
+		  var text1=document.f1.name.value;
+		  var text2=document.f1.msg.value;
+		  document.getElementById("p0").innerHTML += ("<br><big>")+ text1+("</big>") +("<br>")+ text2;
+
+	        }
+	     //}
+	</script>
+
+	<p id="p0"><br /><br /></p>
+	<br>
+	<p id="p1"><br /><br /></p>
+	<br>
+	<p id="p2"><br /><br /></p>
+	<br>
+	<p id="p3"><br /><br /></p>
+	<br>
+	<p id="p4"><br /><br /></p>
+	<br>
+
+
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="page2.html">Quiz</a> | <a href="page3.html">Shop</a> | <a href="#main">Back to top</a></p>
+      <p>Copyright &copy; <a href="index.html"> winter's anime</a> | 2017 | Powered By -<a href="#">Shanka Koththagoda</a></p>
+    </div>
+  </div>
+</body>
+</html>

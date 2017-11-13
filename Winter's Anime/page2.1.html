@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link rel="icon" href="images/icon3.jpg">
+  <title>Qiuz</title>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <style>
+  #content{
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    padding: 10px;
+  }
+  #quiz{
+    font-size: 1.5em;
+    visibility:visible;
+    border: 2px solid #0e0;
+    border-radius: 8px;
+    padding: 30px;
+  }
+  input{
+    margin-left: 60px;
+    cursor: pointer;
+  }
+  #heading{
+    font-size: 2em;
+    width: 100%;
+  }
+  #quiz-time-left{
+    font-size: 2em;
+    text-align: center;
+    width:100%;
+    visibility:visible;
+    color: #fff;
+    background-color: rgba(0,0,0,.6);
+  }
+
+  #afterSubmit{
+    visibility: hidden;
+    width: 100%;
+  }
+
+  #button{
+    width:25%;
+    font-size: 1.5em;
+    margin-left: 400px;
+    visibility:visible;
+    background-color: white;
+    border-radius: 8px;
+    color: #555;
+    border: 1px solid rgba(9,9,9,.2);
+    cursor: pointer;
+  }
+  #buttonReplay{
+    width:30%;
+    font-size: 1.5em;
+    margin-left: 400px;
+    visibility:hidden;
+    background-color: white;
+    border-radius: 8px;
+    color: #555;
+    border: 1px solid rgba(9,9,9,.2);
+    cursor: pointer;
+  }
+
+  #button:hover{
+    color: #333;
+  }
+
+  #buttonReplay:hover{
+    color:#333;
+  }
+
+  #picture{
+    width: 100%;
+    margin: 0px;
+  }
+  #result{
+    text-align: center;
+    font-size: 1.4em;
+  }
+  #infoSummary-01, #infoSummary-02, #infoSummary-03, #infoSummary-04, #infoSummary-05,
+  #infoSummary-06, #infoSummary-07, #infoSummary-08, #infoSummary-09, #infoSummary-10{
+      visibility:hidden;
+      margin-left: 400px;
+  }
+
+
+  </style>
+
+</head>
+
+<body>
+    <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html">WINTER'S<span class="logo_colour">  ANIME</span></a></h1>
+          <h2> An Awesome Place for The Otaku</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li ><a href="index.html">Home</a></li>
+          <li class="selected"><a href="page2.html">Quiz</a></li>
+          <li><a href="page3.html">Shop</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Latest News</h3>
+            <h4>New Website Launched</h4>
+            <h5>March 23 st, 2017</h5>
+            <p>2017 sees the redesign of our website. Take a look around and let us know what you think.<br />
+              <a href="#">Read more</a></p>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="https://en.wikipedia.org/wiki/Death_Note"> Death Note</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Tokyo_Ghoul">Tokyo Ghoul</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Naruto">Naruto</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Bleach_(anime)">Bleach</a></li>
+            </ul>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Search</h3>
+            <form method="post" action="#" id="search_form">
+              <p>
+                <input class="search" type="text" name="search_field" value="Enter keywords....."  style="margin: 0" />
+                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+              </p>
+            </form>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+      </div>
+      <div id="content">
+
+          <h2 id="heading">Anime Qiuz</h2>
+          <div id = "quiz-time-left"></div>
+
+          <form id="quiz" name="quiz" >
+            <div id="quiz-1">
+             <p>01. How does Light Yagami in the Death Note dies?</p>
+               <input type="radio"  name="question01" value="ansCorrect">Ryuk writes Light's name in the death note<br>
+               <input type="radio"  name="question01" value="anscorrect">Gets shot at<br>
+               <input type="radio"  name="question01" value="anscorrect">Cancer<br>
+               <input type="radio"  name="question01" value="anscorrect">Stabbed<br>
+               <div id = "infoSummary-01"></div>
+
+             </div><br>
+
+             <div id="quiz-2">
+               <p>02.In end of the second season of Code Geass, what powers does Lelouch obtain when he dies?</p>
+                <input type="radio"  name="question02" value="anscorrect">None<br>
+                <input type="radio"  name="question02" value="ansCorrect">Both Code and Geass<br>
+                <input type="radio"  name="question02" value="anscorrect">Code - Immortal<br>
+                <input type="radio"  name="question02" value="anscorrect">Geass - The power of the King<br>
+                <div id = "infoSummary-02"></div>
+             </div><br>
+
+          <div id="quiz-3">
+                <p>03. Who is the smartest anime Character?</p>
+
+                <input type="radio"  name="question03" value="anscorrect">Light Yagami<br>
+                <input type="radio"  name="question03" value="anscorrect">L. Lawliet<br>
+                <input type="radio"  name="question03" value="ansCorrect">Lelouch vi Britannia<br>
+                <input type="radio"  name="question03" value="anscorrect">Ceil Phantomive<br>
+                <div id = "infoSummary-03"></div>
+          </div><br>
+
+          <div id="quiz-4">
+                <p>04.How many code users are there in Code Geass?</p>
+                 <input type="radio"  name="question04" value="ansCorrect">2<br>
+                 <input type="radio"  name="question04" value="anscorrect">1<br>
+                 <input type="radio"  name="question04" value="anscorrect">4<br>
+                 <input type="radio"  name="question04" value="anscorrect">3<br>
+                 <div id = "infoSummary-04"></div>
+          </div><br>
+
+          <div id="quiz-5">
+                 <p>05. Which character says this all the time - "I am just one hell of a butler" </p>
+
+                  <input type="radio"  name="question05" value="anscorrect">Kira<br>
+                  <input type="radio"  name="question05" value="ansCorrect">Sebastian<br>
+                  <input type="radio"  name="question05" value="anscorrect">Afro<br>
+                  <input type="radio"  name="question05" value="anscorrect">Goku<br>
+                  <div id = "infoSummary-05"></div>
+          </div><br>
+
+          <div id="quiz-6">
+                  <p>06. Which of these powers is the most dangerous?</p>
+
+                  <input type="radio"  name="question06" value="anscorrect">Campione<br>
+                  <input type="radio"  name="question06" value="anscorrect">Vampirism<br>
+                  <input type="radio"  name="question06" value="ansCorrect">Geass<br>
+                  <input type="radio"  name="question06" value="anscorrect">Sharringan<br>
+                  <div id = "infoSummary-06"></div>
+          </div><br>
+          <div id="quiz-7">
+                  <p>07. Who is an immortal?</p>
+                    <input type="radio"  name="question07" value="ansCorrect">	C.C<br>
+                    <input type="radio"  name="question07" value="anscorrect">Kira<br>
+                    <input type="radio"  name="question07" value="anscorrect">Goku<br>
+                    <input type="radio"  name="question07" value="anscorrect">Alucard<br>
+                    <div id = "infoSummary-07"></div>
+          </div><br>
+
+          <div id="quiz-8">
+                  <p>08.What did Lelouch seek the most?</p>
+
+                   <input type="radio"  name="question08" value="anscorrect">The Past<br>
+                   <input type="radio"  name="question08" value="ansCorrect">The Future<br>
+                   <input type="radio"  name="question08" value="anscorrect">The Present<br>
+                   <input type="radio"  name="question08" value="anscorrect">Power<br>
+                   <div id = "infoSummary-08"></div>
+          </div><br>
+
+          <div id="quiz-9">
+                   <p>09.Who was Lelouch in love with?</p>
+
+                   <input type="radio"  name="question09" value="anscorrect">C.C<br>
+                   <input type="radio"  name="question09" value="anscorrect">Euphimia<br>
+                   <input type="radio"  name="question09" value="ansCorrect">Sherly<br>
+                   <input type="radio"  name="question09" value="anscorrect">Kallen<br>
+                   <div id = "infoSummary-09"></div>
+          </div><br>
+
+          <div id="quiz-10">
+                   <p>10.What was C.C's ultimate wish in life?</p>
+
+                  <input type="radio"  name="question10" value="anscorrect">love<br>
+                  <input type="radio"  name="question10" value="anscorrect">power<br>
+                  <input type="radio"  name="question10" value="ansCorrect">death<br>
+                  <input type="radio"  name="question10" value="anscorrect">food<br>
+                  <div id = "infoSummary-10"></div>
+          </div><br>
+
+            <br>
+            <input type="button" id="button" value="Done" onclick="check()">
+            <input type="button" id="buttonReplay" value="Try Again" onclick="reload()">
+          </form>
+          <div id="afterSubmit">
+                  <p id = "result"></p>
+                  <img id = "picture">
+                </div>
+          </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="page3.html">shop</a> | <a href="contact.html">Contact Us</a> | <a href="#main">Back to top</a> </p>
+      <p>Copyright &copy; <a href="index.html"> winter's anime</a> | 2017 | Powered By -<a href="cv_thilina.html">Thilina Dissaanayake</a></p>
+    </div>
+  </div>
+  <script src="javascript/quiz.js"></script>
+</body>
+</html>
